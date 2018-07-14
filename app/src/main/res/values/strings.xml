@@ -1,3 +1,71 @@
 <resources>
     <string name="app_name">ChampionsAffinity</string>
+
+    <string name="error">Error</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="retry">RETRY</string>
+    <string name="rating_dialog_submit">Submit</string>
+    <string name="rating_dialog_player">Rating the player</string>
+    <string name="rating_dialog_player_please">Rating the player, please!</string>
+    <string name="rating_dialog_empty">Your rating will appear here</string>
+    <string name="rating_dialog_rating">Your rating is:&#160;</string>
+    <string name="rating_thank_you">Thank you for your vote</string>
+    <string name="rating_voted">You voted this player</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="position">Position</string>
+    <string name="position_goalkeeper">Goalkeepers</string>
+    <string name="position_defender">Defenders</string>
+    <string name="position_midfield">Midfielders</string>
+    <string name="position_forward">Forwards</string>
+
+    <string name="group_a">Group A</string>
+    <string name="country_russia">Russia</string>
+    <string name="country_saudi">Saudi Arabia</string>
+    <string name="country_egypt">Egypt</string>
+    <string name="country_uruguay">Uruguay</string>
+
+    <string name="group_b">Group B</string>
+    <string name="country_portugal">Portugal</string>
+    <string name="country_spain">Spain</string>
+    <string name="country_morocco">Morocco</string>
+    <string name="country_iran">Iran</string>
+
+    <string name="group_c">Group C</string>
+    <string name="country_france">France</string>
+    <string name="country_australia">Australia</string>
+    <string name="country_peru">Peru</string>
+    <string name="country_denmark">Denamark</string>
+
+    <string name="group_d">Group d</string>
+    <string name="country_argentina">Argentina</string>
+    <string name="country_iceland">Iceland</string>
+    <string name="country_croatia">Croatia</string>
+    <string name="country_nigeria">Nigeria</string>
+
+    <string name="group_e">Group E</string>
+    <string name="country_brazil">Brazil</string>
+    <string name="country_switzerland">Switzerland</string>
+    <string name="country_costa">Costa Rica</string>
+    <string name="country_serbia">Serbia</string>
+
+    <string name="group_f">Group F</string>
+    <string name="country_germany">Germany</string>
+    <string name="country_mexico">Mexico</string>
+    <string name="country_sweden">Sweden</string>
+    <string name="country_korea">South Korea</string>
+
+    <string name="group_g">Group G</string>
+    <string name="country_belgium">Belgium</string>
+    <string name="country_panama">Panama</string>
+    <string name="country_tunisia">Tunisia</string>
+    <string name="country_england">England</string>
+
+    <string name="group_h">Group H</string>
+    <string name="country_poland">Poland</string>
+    <string name="country_senegal">Senegal</string>
+    <string name="country_colombia">Colombia</string>
+    <string name="country_japan">Japan</string>
 </resources>
