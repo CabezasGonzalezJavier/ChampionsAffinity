@@ -21,7 +21,7 @@ class Constants {
         const val FIREBASE_GOALS = "goalsFavor"
 
         const val IMAGE = "image"
-        const val PLAYERS = "newPlayer"
+        const val PLAYERS = "champions"
         const val VOTE = "vote"
         const val NAME = "name"
         const val ID_PLAYER = "id"

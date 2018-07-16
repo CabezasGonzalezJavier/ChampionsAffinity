@@ -156,6 +156,7 @@ class NewPlayer {
     private var id: Int? = null
     private var imageURL: String? = null
     private var name: String? = null
+    private var nationality: Int? = null
     private var number: String? = null
     private var position: Int? = null
     private var team: Int? = null
@@ -199,6 +200,14 @@ class NewPlayer {
 
     fun setName(name: String) {
         this.name = name
+    }
+
+    fun getNationality(): Int? {
+        return nationality
+    }
+
+    fun setNationality(nationality: Int) {
+        this.nationality = nationality
     }
 
     fun getNumber(): String? {

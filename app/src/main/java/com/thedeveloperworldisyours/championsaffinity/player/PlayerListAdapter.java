@@ -13,8 +13,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.lumbralessoftware.voterussia2018.NewPlayer;
-import com.lumbralessoftware.voterussia2018.Utils;
-import com.thedeveloperworldisyours.championsaffinity.CropTransformation;
 import com.thedeveloperworldisyours.championsaffinity.R;
 
 import java.util.List;
@@ -157,15 +155,12 @@ public class PlayerListAdapter extends RecyclerView
                     .apply(RequestOptions.circleCropTransform())
                     .into(holder.profileImageView);
         } else {
-            RequestOptions requestOptions = new RequestOptions();
-            requestOptions.transform(new CropTransformation(Utils.INSTANCE.dip2px(context, 350), Utils.INSTANCE.dip2px(context, 400),
-                    CropTransformation.CropType.TOP));
             Glide.with(context)
                     .load(list.get(position).getImageURL())
-                    .apply(requestOptions)
+                    .apply(RequestOptions.circleCropTransform())
                     .into(holder.profileImageView);
         }
-        setFlag(list.get(position).getTeam(), holder.flag);
+        setFlag(list.get(position).getNationality(), holder.flag);
         if (Integer.valueOf(list.get(position).getGoalsFavor()) > 0) {
             holder.goalFavorImage.setImageResource(R.drawable.goal);
             holder.goalsFavor.setText(String.valueOf(list.get(position).getGoalsFavor()));
