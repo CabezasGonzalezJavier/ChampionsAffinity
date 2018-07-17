@@ -16,7 +16,6 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.lumbralessoftware.voterussia2018.Utils;
 import com.lumbralessoftware.voterussia2018.rating.RatingContract;
-import com.thedeveloperworldisyours.championsaffinity.CropTransformation;
 import com.thedeveloperworldisyours.championsaffinity.R;
 
 import butterknife.BindView;
@@ -90,12 +89,9 @@ public class RatingDialogFragment extends DialogFragment implements RatingContra
                     .apply(RequestOptions.circleCropTransform())
                     .into(imageView);
         } else {
-            RequestOptions requestOptions = new RequestOptions();
-            requestOptions.transform(new CropTransformation(Utils.INSTANCE.dip2px(getActivity(), 400), Utils.INSTANCE.dip2px(getActivity(), 200),
-                    CropTransformation.CropType.TOP));
             Glide.with(getContext())
                     .load(imagePlayer)
-                    .apply(requestOptions)
+                    .apply(RequestOptions.circleCropTransform())
                     .into(imageView);
         }
         namePlayer = getArguments().getString(NAME, "Enter Name");
