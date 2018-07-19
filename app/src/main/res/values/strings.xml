@@ -22,12 +22,20 @@
     <string name="position_forward">Forwards</string>
 
     <string name="group_a">Group A</string>
+    <string name="club_at_madrid">At. Madrid</string>
+    <string name="club_barcelona">Barcelona</string>
+    <string name="club_bayern">Bayern</string>
+    <string name="club_club_brugge">Brugge</string>
     <string name="country_russia">Russia</string>
     <string name="country_saudi">Saudi Arabia</string>
     <string name="country_egypt">Egypt</string>
     <string name="country_uruguay">Uruguay</string>
 
     <string name="group_b">Group B</string>
+    <string name="club_cska">CSKA Moscu</string>
+    <string name="club_galatasaray">Galatasaray</string>
+    <string name="club_Hoffenshim">Hoffenshim</string>
+    <string name="club_Inter">Inter</string>
     <string name="country_portugal">Portugal</string>
     <string name="country_spain">Spain</string>
     <string name="country_morocco">Morocco</string>

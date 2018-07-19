@@ -109,15 +109,15 @@ public class PlayerListActivity extends AppCompatActivity implements PlayerListM
                 getString(R.string.position_midfield),
                 getString(R.string.position_forward),
 
-                getString(R.string.country_russia),
-                getString(R.string.country_saudi),
-                getString(R.string.country_egypt),
-                getString(R.string.country_uruguay),
+                getString(R.string.club_at_madrid),
+                getString(R.string.club_barcelona),
+                getString(R.string.club_bayern),
+                getString(R.string.club_club_brugge),
 
-                getString(R.string.country_portugal),
-                getString(R.string.country_spain),
-                getString(R.string.country_morocco),
-                getString(R.string.country_iran),
+                getString(R.string.club_cska),
+                getString(R.string.club_galatasaray),
+                getString(R.string.club_Hoffenshim),
+                getString(R.string.club_Inter),
 
                 getString(R.string.country_france),
                 getString(R.string.country_australia),
