@@ -115,10 +115,14 @@ public class PlayerListActivity extends AppCompatActivity implements PlayerListM
                 getString(R.string.club_club_brugge),
 
                 getString(R.string.club_cska),
+                getString(R.string.club_dortmund),
                 getString(R.string.club_galatasaray),
                 getString(R.string.club_Hoffenshim),
-                getString(R.string.club_Inter),
 
+                getString(R.string.club_Inter),
+                getString(R.string.club_juventus),
+                getString(R.string.club_liverpool),
+                getString(R.string.club_lokonmotive),
                 getString(R.string.country_france),
                 getString(R.string.country_australia),
                 getString(R.string.country_peru),

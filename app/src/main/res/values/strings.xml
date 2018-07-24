@@ -33,15 +33,19 @@
 
     <string name="group_b">Group B</string>
     <string name="club_cska">CSKA Moscu</string>
+    <string name="club_dortmund">Dortmund</string>
     <string name="club_galatasaray">Galatasaray</string>
     <string name="club_Hoffenshim">Hoffenshim</string>
-    <string name="club_Inter">Inter</string>
     <string name="country_portugal">Portugal</string>
     <string name="country_spain">Spain</string>
     <string name="country_morocco">Morocco</string>
     <string name="country_iran">Iran</string>
 
     <string name="group_c">Group C</string>
+    <string name="club_inter">Inter</string>
+    <string name="club_juventus">Juventus</string>
+    <string name="club_liverpool">Liverpool</string>
+    <string name="club_lokonmotive">Lokonmotive</string>
     <string name="country_france">France</string>
     <string name="country_australia">Australia</string>
     <string name="country_peru">Peru</string>
