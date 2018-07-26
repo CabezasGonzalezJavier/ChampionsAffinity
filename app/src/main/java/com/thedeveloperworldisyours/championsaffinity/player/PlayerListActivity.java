@@ -119,7 +119,7 @@ public class PlayerListActivity extends AppCompatActivity implements PlayerListM
                 getString(R.string.club_galatasaray),
                 getString(R.string.club_Hoffenshim),
 
-                getString(R.string.club_Inter),
+                getString(R.string.club_inter),
                 getString(R.string.club_juventus),
                 getString(R.string.club_liverpool),
                 getString(R.string.club_lokonmotive),
