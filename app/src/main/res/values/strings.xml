@@ -52,24 +52,37 @@
     <string name="country_denmark">Denamark</string>
 
     <string name="group_d">Group d</string>
+    <string name="club_lyon">Lyon</string>
+    <string name="club_city">M. City</string>
+    <string name="club_united">M. United</string>
+    <string name="club_monaco">Monaco</string>
     <string name="country_argentina">Argentina</string>
     <string name="country_iceland">Iceland</string>
     <string name="country_croatia">Croatia</string>
     <string name="country_nigeria">Nigeria</string>
 
     <string name="group_e">Group E</string>
+    <string name="club_napoli">Napoli</string>
+    <string name="club_paris">Paris San</string>
+    <string name="club_plzen">Plzen</string>
+    <string name="club_porto">Porto</string>
     <string name="country_brazil">Brazil</string>
     <string name="country_switzerland">Switzerland</string>
     <string name="country_costa">Costa Rica</string>
     <string name="country_serbia">Serbia</string>
 
     <string name="group_f">Group F</string>
+    <string name="club_roma">Roma</string>
+    <string name="club_skakhtar">Skakhtar</string>
+    <string name="club_schalke">Schalke</string>
+    <string name="club_tottenham">Tottenham</string>
     <string name="country_germany">Germany</string>
     <string name="country_mexico">Mexico</string>
     <string name="country_sweden">Sweden</string>
     <string name="country_korea">South Korea</string>
 
     <string name="group_g">Group G</string>
+    <string name="club_valencia">Valencia</string>
     <string name="country_belgium">Belgium</string>
     <string name="country_panama">Panama</string>
     <string name="country_tunisia">Tunisia</string>
