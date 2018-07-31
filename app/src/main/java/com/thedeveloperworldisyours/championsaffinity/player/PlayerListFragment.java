@@ -87,6 +87,11 @@ public class PlayerListFragment extends Fragment implements PlayerListContract.V
     }
 
     @Override
+    public void detail(int id) {
+        presenter.goToDetail(list.get(id).getId());
+    }
+
+    @Override
     public void noInternet() {
 
         Snackbar.make(getActivity().findViewById(R.id.player_list_activity_container), getString(R.string.no_internet), Snackbar.LENGTH_LONG)

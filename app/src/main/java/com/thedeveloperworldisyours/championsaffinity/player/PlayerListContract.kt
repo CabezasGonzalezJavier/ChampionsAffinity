@@ -16,6 +16,8 @@ interface PlayerListContract {
         fun fetchPlayerWithTeam(team :Int)
 
         fun goToRating(id: Int, name: String, image:String)
+
+        fun goToDetail(id: Int)
     }
 
     interface View : BaseView<Presenter> {

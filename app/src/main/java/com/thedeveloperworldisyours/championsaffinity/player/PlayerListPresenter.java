@@ -1,5 +1,6 @@
 package com.thedeveloperworldisyours.championsaffinity.player;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
@@ -10,6 +11,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.lumbralessoftware.voterussia2018.NewPlayer;
 import com.lumbralessoftware.voterussia2018.Utils;
 import com.lumbralessoftware.voterussia2018.player.PlayerListContract;
+import com.thedeveloperworldisyours.championsaffinity.detail.DetailActivity;
 import com.thedeveloperworldisyours.championsaffinity.rating.RatingDialogFragment;
 import com.thedeveloperworldisyours.championsaffinity.rating.RatingPresenter;
 
@@ -122,5 +124,14 @@ public class PlayerListPresenter implements PlayerListContract.Presenter {
         } else {
             view.noInternet();
         }
+    }
+
+    @Override
+    public void goToDetail(int id) {
+        activity.startActivity(new Intent(activity, DetailActivity.class));
+        //RatingDialogFragment ratingDialogFragment = RatingDialogFragment.newInstance(id, name, image);
+        //ratingDialogFragment.show(activity.getSupportFragmentManager(), "dialog");
+        //new RatingPresenter(ratingDialogFragment, id, activity);
+
     }
 }

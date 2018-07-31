@@ -72,16 +72,17 @@
     <string name="country_serbia">Serbia</string>
 
     <string name="group_f">Group F</string>
+    <string name="club_real">Real Madrid</string>
     <string name="club_roma">Roma</string>
     <string name="club_skakhtar">Skakhtar</string>
     <string name="club_schalke">Schalke</string>
-    <string name="club_tottenham">Tottenham</string>
     <string name="country_germany">Germany</string>
     <string name="country_mexico">Mexico</string>
     <string name="country_sweden">Sweden</string>
     <string name="country_korea">South Korea</string>
 
     <string name="group_g">Group G</string>
+    <string name="club_tottenham">Tottenham</string>
     <string name="club_valencia">Valencia</string>
     <string name="country_belgium">Belgium</string>
     <string name="country_panama">Panama</string>

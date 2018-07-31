@@ -71,6 +71,8 @@ public class PlayerListAdapter extends RecyclerView
 
     interface ListenerPlayer {
         void rating(int id);
+
+        void detail(int id);
     }
 
     public PlayerListAdapter(ListenerPlayer listener, List<NewPlayer> list, Context context) {
@@ -123,12 +125,18 @@ public class PlayerListAdapter extends RecyclerView
             ButterKnife.bind(this, itemView);
 
             itemView.setOnClickListener(this);
+            rate.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    listenerPlayer.rating(getLayoutPosition());
+
+                }
+            });
         }
 
         @Override
         public void onClick(View view) {
-
-            listenerPlayer.rating(getLayoutPosition());
+            listenerPlayer.detail(getLayoutPosition());
         }
 
     }
