@@ -20,6 +20,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.lumbralessoftware.voterussia2018.Constants.EXTRA_NAME;
 import static com.lumbralessoftware.voterussia2018.Constants.FIREBASE_POSITION;
 import static com.lumbralessoftware.voterussia2018.Constants.FIREBASE_TEAM;
 import static com.lumbralessoftware.voterussia2018.Constants.PLAYERS;
@@ -31,6 +32,7 @@ import static com.lumbralessoftware.voterussia2018.Constants.PLAYERS;
 public class PlayerListPresenter implements PlayerListContract.Presenter {
     private PlayerListContract.View view;
     private AppCompatActivity activity;
+    private List<NewPlayer> playerList;
 
     DatabaseReference databaseReference;
     DatabaseReference player;
@@ -84,12 +86,12 @@ public class PlayerListPresenter implements PlayerListContract.Presenter {
             player.orderByChild(FIREBASE_POSITION).equalTo(position).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
-                    List<NewPlayer> list = new ArrayList<>();
+                    playerList = new ArrayList<>();
                     for (DataSnapshot children : dataSnapshot.getChildren()) {
                         NewPlayer player = children.getValue(NewPlayer.class);
-                        list.add(player);
+                        playerList.add(player);
                     }
-                    view.showPlayer(list);
+                    view.showPlayer(playerList);
                 }
 
                 @Override
@@ -128,10 +130,9 @@ public class PlayerListPresenter implements PlayerListContract.Presenter {
 
     @Override
     public void goToDetail(int id) {
-        activity.startActivity(new Intent(activity, DetailActivity.class));
-        //RatingDialogFragment ratingDialogFragment = RatingDialogFragment.newInstance(id, name, image);
-        //ratingDialogFragment.show(activity.getSupportFragmentManager(), "dialog");
-        //new RatingPresenter(ratingDialogFragment, id, activity);
+        Intent intent = new Intent(activity, DetailActivity.class);
+        intent.putExtra(EXTRA_NAME, playerList.get(id).getName());
+        activity.startActivity(intent);
 
     }
 }

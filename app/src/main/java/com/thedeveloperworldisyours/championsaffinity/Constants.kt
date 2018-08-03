@@ -72,6 +72,6 @@ class Constants {
         const val COLOMBIA = 30
         const val JAPAN = 31
 
-
+        const val EXTRA_NAME = "name"
     }
 }

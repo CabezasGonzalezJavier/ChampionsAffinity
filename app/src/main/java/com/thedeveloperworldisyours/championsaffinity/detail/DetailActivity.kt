@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import com.thedeveloperworldisyours.championsaffinity.R
+import com.lumbralessoftware.voterussia2018.Constants.Companion.EXTRA_NAME
+
 
 /**
  * Created by javiergonzalezcabezas on 30/7/18.
@@ -13,8 +15,16 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.detail_activity)
-        if (savedInstanceState == null) {
-            changeFragment(DetailFragment())
+
+        val extras = intent.extras ?: return
+        val name = extras.getString(EXTRA_NAME)
+
+        if (name != null) {
+
+            if (savedInstanceState == null) {
+
+                changeFragment(DetailFragment.newInstance(name))
+            }
         }
     }
 
