@@ -73,5 +73,6 @@ class Constants {
         const val JAPAN = 31
 
         const val EXTRA_NAME = "name"
+        const val EXTRA_BIG_IMAGE = "big_image"
     }
 }

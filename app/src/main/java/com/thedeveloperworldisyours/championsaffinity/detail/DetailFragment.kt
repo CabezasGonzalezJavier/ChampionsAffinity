@@ -2,7 +2,6 @@ package com.thedeveloperworldisyours.championsaffinity.detail
 
 import kotlinx.android.synthetic.main.detail_fragment.*
 import android.os.Bundle
-import android.support.annotation.Nullable
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -29,11 +28,11 @@ class DetailFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view : View = inflater?.inflate(R.layout.detail_fragment, container, false)
         val args = arguments
-        namePlayer= args.getString(EXTRA_NAME) as String
+        namePlayer= args?.getString(EXTRA_NAME) as String
         return view
     }
 
-    override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         detail_fragment_description_title_textView.setText(namePlayer)
     }

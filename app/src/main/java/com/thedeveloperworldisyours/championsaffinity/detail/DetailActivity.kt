@@ -3,8 +3,11 @@ package com.thedeveloperworldisyours.championsaffinity.detail
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
+import com.bumptech.glide.Glide
+import com.lumbralessoftware.voterussia2018.Constants.Companion.EXTRA_BIG_IMAGE
 import com.thedeveloperworldisyours.championsaffinity.R
 import com.lumbralessoftware.voterussia2018.Constants.Companion.EXTRA_NAME
+import kotlinx.android.synthetic.main.detail_activity.*
 
 
 /**
@@ -18,6 +21,7 @@ class DetailActivity : AppCompatActivity() {
 
         val extras = intent.extras ?: return
         val name = extras.getString(EXTRA_NAME)
+        val bigImage = extras.getString(EXTRA_BIG_IMAGE)
 
         if (name != null) {
 
@@ -25,6 +29,9 @@ class DetailActivity : AppCompatActivity() {
 
                 changeFragment(DetailFragment.newInstance(name))
             }
+        }
+        if (bigImage != null) {
+            Glide.with(this).load(bigImage).into(detail_activity_toolbar_image_view)
         }
     }
 

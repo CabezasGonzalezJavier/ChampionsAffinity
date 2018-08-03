@@ -20,6 +20,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.lumbralessoftware.voterussia2018.Constants.EXTRA_BIG_IMAGE;
 import static com.lumbralessoftware.voterussia2018.Constants.EXTRA_NAME;
 import static com.lumbralessoftware.voterussia2018.Constants.FIREBASE_POSITION;
 import static com.lumbralessoftware.voterussia2018.Constants.FIREBASE_TEAM;
@@ -43,6 +44,7 @@ public class PlayerListPresenter implements PlayerListContract.Presenter {
         databaseReference = FirebaseDatabase.getInstance().getReference();
         player = databaseReference.child(PLAYERS);
         this.view.setPresenter(this);
+        playerList = new ArrayList<>();
     }
 
     @Override
@@ -52,12 +54,12 @@ public class PlayerListPresenter implements PlayerListContract.Presenter {
             player.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
-                    List<NewPlayer> list = new ArrayList<>();
+                    playerList.clear();
                     for (DataSnapshot children : dataSnapshot.getChildren()) {
                         NewPlayer player = children.getValue(NewPlayer.class);
-                        list.add(player);
+                        playerList.add(player);
                     }
-                    view.showPlayer(list);
+                    view.showPlayer(playerList);
                 }
 
                 @Override
@@ -86,7 +88,7 @@ public class PlayerListPresenter implements PlayerListContract.Presenter {
             player.orderByChild(FIREBASE_POSITION).equalTo(position).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
-                    playerList = new ArrayList<>();
+                    playerList.clear();
                     for (DataSnapshot children : dataSnapshot.getChildren()) {
                         NewPlayer player = children.getValue(NewPlayer.class);
                         playerList.add(player);
@@ -110,12 +112,12 @@ public class PlayerListPresenter implements PlayerListContract.Presenter {
             player.orderByChild(FIREBASE_TEAM).equalTo(team).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
-                    List<NewPlayer> list = new ArrayList<>();
+                    playerList.clear();
                     for (DataSnapshot children : dataSnapshot.getChildren()) {
                         NewPlayer player = children.getValue(NewPlayer.class);
-                        list.add(player);
+                        playerList.add(player);
                     }
-                    view.showPlayer(list);
+                    view.showPlayer(playerList);
                 }
 
                 @Override
@@ -132,6 +134,7 @@ public class PlayerListPresenter implements PlayerListContract.Presenter {
     public void goToDetail(int id) {
         Intent intent = new Intent(activity, DetailActivity.class);
         intent.putExtra(EXTRA_NAME, playerList.get(id).getName());
+        intent.putExtra(EXTRA_BIG_IMAGE, playerList.get(id).getImage());
         activity.startActivity(intent);
 
     }

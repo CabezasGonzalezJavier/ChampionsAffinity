@@ -60,6 +60,7 @@ class NewPlayer {
     var club: String? = null
     var goalsFavor: String? = null
     var id: Int? = null
+    var image : String? = null
     var imageURL: String? = null
     var name: String? = null
     var nationality: Int? = null
