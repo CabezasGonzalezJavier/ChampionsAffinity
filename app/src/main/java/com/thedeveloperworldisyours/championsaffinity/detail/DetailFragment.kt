@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.lumbralessoftware.voterussia2018.Constants.Companion.EXTRA_NAME
+import com.thedeveloperworldisyours.championsaffinity.Constantss.Companion.EXTRA_NAME
 import com.thedeveloperworldisyours.championsaffinity.R
 
 /**

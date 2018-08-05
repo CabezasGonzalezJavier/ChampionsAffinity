@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import com.lumbralessoftware.voterussia2018.Constants.Companion.EXTRA_BIG_IMAGE
+import com.thedeveloperworldisyours.championsaffinity.Constantss.Companion.EXTRA_BIG_IMAGE
+import com.thedeveloperworldisyours.championsaffinity.Constantss.Companion.EXTRA_NAME
 import com.thedeveloperworldisyours.championsaffinity.R
-import com.lumbralessoftware.voterussia2018.Constants.Companion.EXTRA_NAME
 import kotlinx.android.synthetic.main.detail_activity.*
 
 

@@ -22,10 +22,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-import static com.lumbralessoftware.voterussia2018.Constants.DEFAULT_IMAGE;
-import static com.lumbralessoftware.voterussia2018.Constants.ID_PLAYER;
-import static com.lumbralessoftware.voterussia2018.Constants.IMAGE;
-import static com.lumbralessoftware.voterussia2018.Constants.NAME;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.DEFAULT_IMAGE;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.ID_PLAYER;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.IMAGE;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.NAME;
 
 /**
  * Created by javiergonzalezcabezas on 9/6/18.

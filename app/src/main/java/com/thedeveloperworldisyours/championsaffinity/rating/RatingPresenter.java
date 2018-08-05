@@ -13,10 +13,10 @@ import com.lumbralessoftware.voterussia2018.rating.RatingContract;
 
 import java.text.DecimalFormat;
 
-import static com.lumbralessoftware.voterussia2018.Constants.FIREBASE_ID;
-import static com.lumbralessoftware.voterussia2018.Constants.FIREBASE_VOTE;
-import static com.lumbralessoftware.voterussia2018.Constants.PLAYERS;
-import static com.lumbralessoftware.voterussia2018.Constants.VOTE;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.FIREBASE_ID;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.FIREBASE_VOTE;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.PLAYERS;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.VOTE;
 import static com.thedeveloperworldisyours.championsaffinity.SharedPreferences.isVote;
 import static com.thedeveloperworldisyours.championsaffinity.SharedPreferences.setVote;
 

@@ -20,11 +20,11 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.lumbralessoftware.voterussia2018.Constants.EXTRA_BIG_IMAGE;
-import static com.lumbralessoftware.voterussia2018.Constants.EXTRA_NAME;
-import static com.lumbralessoftware.voterussia2018.Constants.FIREBASE_POSITION;
-import static com.lumbralessoftware.voterussia2018.Constants.FIREBASE_TEAM;
-import static com.lumbralessoftware.voterussia2018.Constants.PLAYERS;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.EXTRA_BIG_IMAGE;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.EXTRA_NAME;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.FIREBASE_POSITION;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.FIREBASE_TEAM;
+import static com.thedeveloperworldisyours.championsaffinity.Constantss.PLAYERS;
 
 /**
  * Created by javiergonzalezcabezas on 21/5/18.

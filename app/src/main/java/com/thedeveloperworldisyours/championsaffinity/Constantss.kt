@@ -1,9 +1,9 @@
-package com.lumbralessoftware.voterussia2018
+package com.thedeveloperworldisyours.championsaffinity
 
 /**
- * Created by javiergonzalezcabezas on 9/6/18.
+ * Created by javiergonzalezcabezas on 5/8/18.
  */
-class Constants {
+class Constantss {
     companion object {
         const val FIREBASE_FIVE = "five"
         const val FIREBASE_FOUR = "four"
