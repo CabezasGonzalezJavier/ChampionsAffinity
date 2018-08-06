@@ -3,6 +3,7 @@ package com.thedeveloperworldisyours.championsaffinity.player;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
+import com.bumptech.glide.util.Util;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -11,6 +12,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.lumbralessoftware.voterussia2018.NewPlayer;
 import com.lumbralessoftware.voterussia2018.Utils;
 import com.lumbralessoftware.voterussia2018.player.PlayerListContract;
+import com.thedeveloperworldisyours.championsaffinity.add.AddDialogFragment;
 import com.thedeveloperworldisyours.championsaffinity.detail.DetailActivity;
 import com.thedeveloperworldisyours.championsaffinity.rating.RatingDialogFragment;
 import com.thedeveloperworldisyours.championsaffinity.rating.RatingPresenter;
@@ -137,5 +139,10 @@ public class PlayerListPresenter implements PlayerListContract.Presenter {
         intent.putExtra(EXTRA_BIG_IMAGE, playerList.get(id).getImage());
         activity.startActivity(intent);
 
+    }
+
+    @Override
+    public void goToAdd() {
+        Utils.INSTANCE.addFragmentToActivity(activity.getSupportFragmentManager(),new AddDialogFragment(), 0);
     }
 }

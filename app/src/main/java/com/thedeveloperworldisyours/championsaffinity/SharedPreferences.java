@@ -1,9 +1,7 @@
 package com.thedeveloperworldisyours.championsaffinity;
-
 import android.content.Context;
-
 /**
- * Created by javiergonzalezcabezas on 29/6/18.
+ * Created by javiergonzalezcabezas on 5/8/18.
  */
 
 public class SharedPreferences {

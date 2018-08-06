@@ -1,6 +1,7 @@
 package com.thedeveloperworldisyours.championsaffinity.player;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -64,10 +65,15 @@ public class PlayerListActivity extends AppCompatActivity implements PlayerListM
 
     @BindView(R.id.drawer_layout)
     DrawerLayout drawerLayout;
+
     @BindView(R.id.left_drawer)
     RelativeLayout drawerRelativeLayout;
+
     @BindView(R.id.list_view_drawer)
     RecyclerView recyclerView;
+
+    @BindView(R.id.player_activity_list_fab)
+    FloatingActionButton floatingActionButton;
 
     private String[] optionMenu;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -82,8 +88,13 @@ public class PlayerListActivity extends AppCompatActivity implements PlayerListM
         setContentView(R.layout.player_list_activity);
 
         ButterKnife.bind(this);
+        initFloatingActionButton();
         initFragment();
         initDrawer();
+    }
+
+    private void initFloatingActionButton() {
+        floatingActionButton.setOnClickListener((View view) -> presenter.goToAdd());
     }
 
     private void initFragment() {
@@ -210,7 +221,7 @@ public class PlayerListActivity extends AppCompatActivity implements PlayerListM
                 case 35:
                 case 40:
                     obj = new ElementList(mMapIndex.get(section).toString(), true, false);
-                    section ++;
+                    section++;
                     break;
                 case 4:
                 case 9:

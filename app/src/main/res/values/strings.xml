@@ -94,4 +94,7 @@
     <string name="country_senegal">Senegal</string>
     <string name="country_colombia">Colombia</string>
     <string name="country_japan">Japan</string>
+
+    <string name="add_title_name">Name</string>
+    <string name="add_title_full_name">Full name</string>
 </resources>

@@ -18,6 +18,8 @@ interface PlayerListContract {
         fun goToRating(id: Int, name: String, image:String)
 
         fun goToDetail(id: Int)
+
+        fun goToAdd()
     }
 
     interface View : BaseView<Presenter> {
