@@ -2,7 +2,6 @@ package com.thedeveloperworldisyours.championsaffinity.add
 
 import android.os.Bundle
 import android.support.v4.app.DialogFragment
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +10,7 @@ import com.thedeveloperworldisyours.championsaffinity.R
 /**
  * Created by javiergonzalezcabezas on 5/8/18.
  */
-class AddDialogFragment: Fragment() {
+class AddDialogFragment: DialogFragment() {
     companion object {
         fun newInstance(name: String): AddDialogFragment {
             val fragment = AddDialogFragment()
