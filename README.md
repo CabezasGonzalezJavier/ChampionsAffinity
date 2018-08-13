@@ -5,6 +5,7 @@ Champions Affinity is a project which I started in Java, and I'm going to finish
  <img src="https://github.com/LumbralesSoftware/ChampionsAffinity/blob/master/app/src/main/res/drawable/icon_512.png" width="300px" />
 </p>
 
+
 Developed By
 ------------
 * Javier González Cabezas - <javiergonzalezcabezas@gmail.com>
