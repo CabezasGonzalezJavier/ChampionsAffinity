@@ -6,6 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.thedeveloperworldisyours.championsaffinity.R
+import android.content.DialogInterface
+import android.support.v7.app.AlertDialog
+import android.widget.ArrayAdapter
+import kotlinx.android.synthetic.main.add_dialog_fragment.*
+
 
 /**
  * Created by javiergonzalezcabezas on 5/8/18.
@@ -30,6 +35,34 @@ class AddDialogFragment: DialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //detail_fragment_description_title_textView.setText(namePlayer)
+
+        add_club_button.setOnClickListener {
+            showClubs()
+        }
+    }
+
+    fun showClubs() {
+        val builderSingle = AlertDialog.Builder(activity)
+        builderSingle.setTitle("Select One Name:-")
+
+        val arrayAdapter = ArrayAdapter<String>(activity, android.R.layout.select_dialog_singlechoice)
+        arrayAdapter.add("Hardik")
+        arrayAdapter.add("Archit")
+        arrayAdapter.add("Jignesh")
+        arrayAdapter.add("Umang")
+        arrayAdapter.add("Gatti")
+
+        builderSingle.setNegativeButton("cancel", DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
+
+        builderSingle.setAdapter(arrayAdapter, DialogInterface.OnClickListener { dialog, which ->
+            val strName = arrayAdapter.getItem(which)
+            val builderInner = AlertDialog.Builder(activity)
+            builderInner.setMessage(strName)
+            builderInner.setTitle("Your Selected Item is")
+            builderInner.setPositiveButton("Ok", DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
+            builderInner.show()
+        })
+        builderSingle.show()
     }
 
 }
