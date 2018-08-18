@@ -46,11 +46,11 @@ class AddDialogFragment: DialogFragment() {
         builderSingle.setTitle("Select One Name:-")
 
         val arrayAdapter = ArrayAdapter<String>(activity, android.R.layout.select_dialog_singlechoice)
-        arrayAdapter.add("Hardik")
-        arrayAdapter.add("Archit")
-        arrayAdapter.add("Jignesh")
-        arrayAdapter.add("Umang")
-        arrayAdapter.add("Gatti")
+        arrayAdapter.add("At.Madrid")
+        arrayAdapter.add("Barcelona")
+        arrayAdapter.add("Real Madrid")
+        arrayAdapter.add("Valencia")
+        arrayAdapter.add("Bayern")
 
         builderSingle.setNegativeButton("cancel", DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
 
