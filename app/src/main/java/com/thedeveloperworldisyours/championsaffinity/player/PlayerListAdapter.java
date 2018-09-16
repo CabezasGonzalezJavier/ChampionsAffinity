@@ -154,7 +154,7 @@ public class PlayerListAdapter extends RecyclerView
     public void onBindViewHolder(DataObjectHolder holder, int position) {
         holder.name.setText(list.get(position).getName());
         holder.club.setText(list.get(position).getClub());
-        holder.number.setText(list.get(position).getNumber());
+        /*holder.number.setText(list.get(position).getNumber());
         holder.rate.setText(String.valueOf(list.get(position).getVote()));
         setImagePosition(list.get(position).getPosition(), holder.positon);
         if (list.get(position).getImageURL().equals("")) {
@@ -168,7 +168,7 @@ public class PlayerListAdapter extends RecyclerView
                     .apply(RequestOptions.circleCropTransform())
                     .into(holder.profileImageView);
         }
-        setFlag(list.get(position).getNationality(), holder.flag);
+        setFlag(list.get(position).getNationality(), holder.flag);*/
         if (Integer.valueOf(list.get(position).getGoalsFavor()) > 0) {
             holder.goalFavorImage.setImageResource(R.drawable.goal);
             holder.goalsFavor.setText(String.valueOf(list.get(position).getGoalsFavor()));

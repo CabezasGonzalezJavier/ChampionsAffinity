@@ -3,7 +3,6 @@ package com.thedeveloperworldisyours.championsaffinity.player;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
-import com.bumptech.glide.util.Util;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

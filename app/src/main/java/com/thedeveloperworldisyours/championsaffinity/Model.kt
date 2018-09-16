@@ -67,6 +67,6 @@ class NewPlayer {
     var number: String? = null
     var position: Int? = null
     var team: Int? = null
-    var vote: Float? = null
+    var vote: Int? = null
 
 }
