@@ -31,8 +31,6 @@ class AddDialogFragment: DialogFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view : View = inflater?.inflate(R.layout.add_dialog_fragment, container, false)
-        val args = arguments
-
 
         return view
     }
@@ -43,6 +41,7 @@ class AddDialogFragment: DialogFragment() {
 
         add_button.setOnClickListener {
             addPlayer()
+            dismiss()
         }
         add_show_club.setOnClickListener {
             showClubs()
@@ -53,19 +52,20 @@ class AddDialogFragment: DialogFragment() {
 
         val databaseReference = FirebaseDatabase.getInstance().reference
         val player = databaseReference.child(PLAYERS)
+        val idPlayer = player.child("1")
         val champions = NewPlayer()
         champions.club = "Barcelona"
         champions.goalsFavor = "4"
-        champions.id = 0
+        champions.id = 1
         champions.image = "https://firebasestorage.googleapis.com/v0/b/voterussia2018.appspot.com/o/1-1b.jpeg?alt=media&token=36a034f5-1c69-460f-857a-bf2b6f4d0589"
         champions.imageURL = "https://firebasestorage.googleapis.com/v0/b/voterussia2018.appspot.com/o/1-1b.jpeg?alt=media&token=36a034f5-1c69-460f-857a-bf2b6f4d0589"
         champions.name = "Javier"
-        champions.nationality = 1
+        champions.nationality = "1"
         champions.number = "10"
-        champions.position =  3
-        champions.team = 1
-        champions.vote = 3
-        player.setValue(champions)
+        champions.position =  "3"
+        champions.team = "1"
+        champions.vote = "3.5"
+        idPlayer.setValue(champions)
     }
 
     fun showClubs() {
