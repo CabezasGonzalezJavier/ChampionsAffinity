@@ -22,6 +22,25 @@ allprojects {
         jcenter()
     }
 }
+ext {
+    // Sdk and tools
+    minSdkVersion = 25
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    buildToolsVersion = '26.1.0'
+
+    supportLibraryVersion = '25.4.0'
+    guavaVersion = '18.0'
+    butterknife = '8.4.0'
+    retrofit = '2.1.0'
+    okhttp = '3.3.1'
+    dagger = '2.11'
+    mockito = '1.10.19'
+    assertj = '2.7.0'
+    constraint = '1.0.2'
+    coroutines = '0.19.3'
+    coroutinesretrofit= '0.8.2'
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir

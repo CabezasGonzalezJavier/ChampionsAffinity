@@ -95,11 +95,7 @@ public class PlayerListFragment extends Fragment implements PlayerListContract.V
     public void noInternet() {
 
         Snackbar.make(getActivity().findViewById(R.id.player_list_activity_container), getString(R.string.no_internet), Snackbar.LENGTH_LONG)
-                .setAction(getString(R.string.retry), new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        presenter.fetch();
-                    }
-                }).show();
+                .setAction(getString(R.string.retry), (View view) ->
+                        presenter.fetch()).show();
     }
 }
