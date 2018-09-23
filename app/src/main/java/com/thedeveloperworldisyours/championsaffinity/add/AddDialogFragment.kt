@@ -23,46 +23,7 @@ class AddDialogFragment: DialogFragment() {
 
     //lateinit var addDialogPresenter: AddDialogPresenter
     var res: android.content.res.Resources? = null
-    val optionMenu = arrayOf<String>(
-        resources.getString(R.string.club_at_madrid),
-        resources.getString(R.string.club_barcelona),
-        resources.getString(R.string.club_bayern),
-        resources.getString(R.string.club_club_brugge),
 
-        resources.getString(R.string.club_cska),
-        resources.getString(R.string.club_dortmund),
-        resources.getString(R.string.club_galatasaray),
-        resources.getString(R.string.club_Hoffenshim),
-
-        resources.getString(R.string.club_inter),
-        resources.getString(R.string.club_juventus),
-        resources.getString(R.string.club_liverpool),
-        resources.getString(R.string.club_lokonmotive),
-
-        resources.getString(R.string.club_lyon),
-        resources.getString(R.string.club_city),
-        resources.getString(R.string.club_united),
-        resources.getString(R.string.club_monaco),
-
-        resources.getString(R.string.club_napoli),
-        resources.getString(R.string.club_paris),
-        resources.getString(R.string.club_plzen),
-        resources.getString(R.string.club_porto),
-
-        resources.getString(R.string.club_real),
-        resources.getString(R.string.club_roma),
-        resources.getString(R.string.club_skakhtar),
-        resources.getString(R.string.club_schalke),
-
-        resources.getString(R.string.club_tottenham),
-        resources.getString(R.string.club_valencia),
-        resources.getString(R.string.country_tunisia),
-        resources.getString(R.string.country_england),
-
-        resources.getString(R.string.country_poland),
-        resources.getString(R.string.country_senegal),
-        resources.getString(R.string.country_colombia),
-        resources.getString(R.string.country_japan))
     val champions = NewPlayer()
 
     companion object {
@@ -99,7 +60,46 @@ class AddDialogFragment: DialogFragment() {
 
         val databaseReference = FirebaseDatabase.getInstance().reference
         val player = databaseReference.child(PLAYERS)
+        val optionMenu = arrayOf<String>(
+                resources.getString(R.string.club_at_madrid),
+                resources.getString(R.string.club_barcelona),
+                resources.getString(R.string.club_bayern),
+                resources.getString(R.string.club_club_brugge),
 
+                resources.getString(R.string.club_cska),
+                resources.getString(R.string.club_dortmund),
+                resources.getString(R.string.club_galatasaray),
+                resources.getString(R.string.club_Hoffenshim),
+
+                resources.getString(R.string.club_inter),
+                resources.getString(R.string.club_juventus),
+                resources.getString(R.string.club_liverpool),
+                resources.getString(R.string.club_lokonmotive),
+
+                resources.getString(R.string.club_lyon),
+                resources.getString(R.string.club_city),
+                resources.getString(R.string.club_united),
+                resources.getString(R.string.club_monaco),
+
+                resources.getString(R.string.club_napoli),
+                resources.getString(R.string.club_paris),
+                resources.getString(R.string.club_plzen),
+                resources.getString(R.string.club_porto),
+
+                resources.getString(R.string.club_real),
+                resources.getString(R.string.club_roma),
+                resources.getString(R.string.club_skakhtar),
+                resources.getString(R.string.club_schalke),
+
+                resources.getString(R.string.club_tottenham),
+                resources.getString(R.string.club_valencia),
+                resources.getString(R.string.country_tunisia),
+                resources.getString(R.string.country_england),
+
+                resources.getString(R.string.country_poland),
+                resources.getString(R.string.country_senegal),
+                resources.getString(R.string.country_colombia),
+                resources.getString(R.string.country_japan))
         champions.goalsFavor = "4"
         champions.id = 1
         champions.image = "https://firebasestorage.googleapis.com/v0/b/voterussia2018.appspot.com/o/1-1b.jpeg?alt=media&token=36a034f5-1c69-460f-857a-bf2b6f4d0589"
