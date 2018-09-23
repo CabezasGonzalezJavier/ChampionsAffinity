@@ -63,10 +63,10 @@ class NewPlayer {
     var image : String? = null
     var imageURL: String? = null
     var name: String? = null
-    var nationality: String? = null
+    var nationality: Long? = null
     var number: String? = null
-    var position: String? = null
-    var team: String? = null
+    var position: Long? = null
+    var team: Long? = null
     var vote: String? = null
 
 }
