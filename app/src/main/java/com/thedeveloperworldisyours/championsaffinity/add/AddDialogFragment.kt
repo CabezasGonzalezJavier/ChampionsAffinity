@@ -120,11 +120,63 @@ class AddDialogFragment: DialogFragment() {
         //addDialogPresenter.savePlayer(champions)
         idPlayer.setValue(champions)
     }
+
     fun showNationality() {
         val builderNationality = AlertDialog.Builder(activity)
         builderNationality.setTitle(getString(R.string.add_nationality))
         val arrayAdapter = ArrayAdapter<String>(activity, android.R.layout.select_dialog_singlechoice)
-        arrayAdapter.add(getString(R.string.club_at_madrid))
+        arrayAdapter.add(getString(R.string.nationality_russia))
+        arrayAdapter.add(getString(R.string.nationality_saudi))
+        arrayAdapter.add(getString(R.string.nationality_egypt))
+        arrayAdapter.add(getString(R.string.nationality_uruguay))
+
+        arrayAdapter.add(getString(R.string.nationality_portugal))
+        arrayAdapter.add(getString(R.string.nationality_spain))
+        arrayAdapter.add(getString(R.string.nationality_morocco))
+        arrayAdapter.add(getString(R.string.nationality_iran))
+
+        arrayAdapter.add(getString(R.string.nationality_france))
+        arrayAdapter.add(getString(R.string.nationality_australia))
+        arrayAdapter.add(getString(R.string.nationality_peru))
+        arrayAdapter.add(getString(R.string.nationality_denmark))
+
+        arrayAdapter.add(getString(R.string.nationality_argentina))
+        arrayAdapter.add(getString(R.string.nationality_iceland))
+        arrayAdapter.add(getString(R.string.nationality_croatia))
+        arrayAdapter.add(getString(R.string.nationality_nigeria))
+
+        arrayAdapter.add(getString(R.string.nationality_brazil))
+        arrayAdapter.add(getString(R.string.nationality_switzerland))
+        arrayAdapter.add(getString(R.string.nationality_costa_rica))
+        arrayAdapter.add(getString(R.string.nationality_serbia))
+
+        arrayAdapter.add(getString(R.string.nationality_germany))
+        arrayAdapter.add(getString(R.string.nationality_mexico))
+        arrayAdapter.add(getString(R.string.nationality_sweden))
+        arrayAdapter.add(getString(R.string.nationality_south_korea))
+
+        arrayAdapter.add(getString(R.string.nationality_belgium))
+        arrayAdapter.add(getString(R.string.nationality_panama))
+        arrayAdapter.add(getString(R.string.nationality_tunisia))
+        arrayAdapter.add(getString(R.string.nationality_england))
+
+        arrayAdapter.add(getString(R.string.nationality_poland))
+        arrayAdapter.add(getString(R.string.nationality_senegal))
+        arrayAdapter.add(getString(R.string.nationality_colombia))
+        arrayAdapter.add(getString(R.string.nationality_japan))
+
+        builderNationality.setNegativeButton(android.R.string.cancel, DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
+
+        builderNationality.setAdapter(arrayAdapter, DialogInterface.OnClickListener() { dialog, which ->
+            champions.nationality =  which.toLong()
+            val strName = arrayAdapter.getItem(which)
+            val builderInner = AlertDialog.Builder(activity)
+            builderInner.setMessage(strName)
+            builderInner.setTitle(getString(R.string.add_your_selected))
+            builderInner.setPositiveButton(getString(android.R.string.ok), DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
+            builderInner.show()
+        })
+        builderNationality.show()
 
     }
 
@@ -160,15 +212,15 @@ class AddDialogFragment: DialogFragment() {
         arrayAdapter.add(getString(R.string.club_tottenham))
         arrayAdapter.add(getString(R.string.club_valencia))
 
-        builderSingle.setNegativeButton("cancel", DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
+        builderSingle.setNegativeButton(getString(android.R.string.cancel), DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
 
         builderSingle.setAdapter(arrayAdapter, DialogInterface.OnClickListener { dialog, which ->
             champions.team =  which.toLong()
             val strName = arrayAdapter.getItem(which)
             val builderInner = AlertDialog.Builder(activity)
             builderInner.setMessage(strName)
-            builderInner.setTitle("Your Selected Item is")
-            builderInner.setPositiveButton("Ok", DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
+            builderInner.setTitle(getString(R.string.add_your_selected))
+            builderInner.setPositiveButton(getString(android.R.string.ok), DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
             builderInner.show()
         })
         builderSingle.show()

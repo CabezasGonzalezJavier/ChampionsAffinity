@@ -103,44 +103,45 @@
     <string name="add_to_add">add player</string>
     <string name="add_team">Select One Team:</string>
     <string name="add_nationality">Select One Nationality:</string>
+    <string name="add_your_selected">Your Selected Item is</string>
 
-    <string name="add_russia">RUSSIA</string>
-    <string name="add_saudi">SAUDI_ARABIA</string>
-    <string name="add_egypt">EGYPT</string>
-    <string name="add_uruguay">URUGUAY</string>
+    <string name="nationality_russia">RUSSIA</string>
+    <string name="nationality_saudi">SAUDI_ARABIA</string>
+    <string name="nationality_egypt">EGYPT</string>
+    <string name="nationality_uruguay">URUGUAY</string>
 
-    <string name="add_portugal">PORTUGAL</string>
-    <string name="add_spain">SPAIN</string>
-    <string name="add_morocco">MOROCCO</string>
-    <string name="add_iran">IRAN</string>
+    <string name="nationality_portugal">PORTUGAL</string>
+    <string name="nationality_spain">SPAIN</string>
+    <string name="nationality_morocco">MOROCCO</string>
+    <string name="nationality_iran">IRAN</string>
 
-    <string name="add_france">FRANCE</string>
-    <string name="add_australia">AUSTRALIA</string>
-    <string name="add_peru">PERU</string>
-    <string name="add_denmark">DENMARK</string>
+    <string name="nationality_france">FRANCE</string>
+    <string name="nationality_australia">AUSTRALIA</string>
+    <string name="nationality_peru">PERU</string>
+    <string name="nationality_denmark">DENMARK</string>
 
-    <string name="add_argentina">ARGENTINA</string>
-    <string name="add_iceland">ICELAND</string>
-    <string name="add_croatia">CROATIA</string>
-    <string name="add_nigeria">NIGERIA</string>
+    <string name="nationality_argentina">ARGENTINA</string>
+    <string name="nationality_iceland">ICELAND</string>
+    <string name="nationality_croatia">CROATIA</string>
+    <string name="nationality_nigeria">NIGERIA</string>
 
-    <string name="add_brazil">BRAZIL</string>
-    <string name="add_switzerland">SWITZERLAND</string>
-    <string name="add_costa_rica">COSTA_RICA</string>
-    <string name="add_serbia">SERBIA</string>
+    <string name="nationality_brazil">BRAZIL</string>
+    <string name="nationality_switzerland">SWITZERLAND</string>
+    <string name="nationality_costa_rica">COSTA_RICA</string>
+    <string name="nationality_serbia">SERBIA</string>
 
-    <string name="add_germany">GERMANY</string>
-    <string name="add_mexico">MEXICO</string>
-    <string name="add_sweden">SWEDEN</string>
-    <string name="add_south_korea">SOUTH_KOREA</string>
+    <string name="nationality_germany">GERMANY</string>
+    <string name="nationality_mexico">MEXICO</string>
+    <string name="nationality_sweden">SWEDEN</string>
+    <string name="nationality_south_korea">SOUTH_KOREA</string>
 
-    <string name="add_belgium">BELGIUM</string>
-    <string name="add_panama">PANAMA</string>
-    <string name="add_tunisia">TUNISIA</string>
-    <string name="add_england">ENGLAND</string>
+    <string name="nationality_belgium">BELGIUM</string>
+    <string name="nationality_panama">PANAMA</string>
+    <string name="nationality_tunisia">TUNISIA</string>
+    <string name="nationality_england">ENGLAND</string>
 
-    <string name="add_poland">POLAND</string>
-    <string name="add_senegal">SENEGAL</string>
-    <string name="add_colombia">COLOMBIA</string>
-    <string name="add_japan">JAPAN</string>
+    <string name="nationality_poland">POLAND</string>
+    <string name="nationality_senegal">SENEGAL</string>
+    <string name="nationality_colombia">COLOMBIA</string>
+    <string name="nationality_japan">JAPAN</string>
 </resources>
