@@ -84,6 +84,16 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
+        android:id="@+id/add_show_nationality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_nationality_button"
+        app:layout_constraintBottom_toTopOf="@+id/add_show_club"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_title_full_club_editText" />
+
+    <Button
         android:id="@+id/add_show_club"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -91,7 +101,7 @@
         app:layout_constraintBottom_toBottomOf="@id/add_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_title_full_club_editText" />
+        app:layout_constraintTop_toBottomOf="@+id/add_show_nationality" />
 
     <Button
         android:id="@+id/add_button"

@@ -51,6 +51,9 @@ class AddDialogFragment: DialogFragment() {
             addPlayer()
             dismiss()
         }
+        add_show_nationality.setOnClickListener {
+            showNationality()
+        }
         add_show_club.setOnClickListener {
             showClubs()
         }
@@ -169,12 +172,8 @@ class AddDialogFragment: DialogFragment() {
 
         builderNationality.setAdapter(arrayAdapter, DialogInterface.OnClickListener() { dialog, which ->
             champions.nationality =  which.toLong()
-            val strName = arrayAdapter.getItem(which)
-            val builderInner = AlertDialog.Builder(activity)
-            builderInner.setMessage(strName)
-            builderInner.setTitle(getString(R.string.add_your_selected))
-            builderInner.setPositiveButton(getString(android.R.string.ok), DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
-            builderInner.show()
+            dialog.dismiss()
+            //add_show_nationality.text = arrayAdapter.getItem(which)
         })
         builderNationality.show()
 
@@ -216,12 +215,9 @@ class AddDialogFragment: DialogFragment() {
 
         builderSingle.setAdapter(arrayAdapter, DialogInterface.OnClickListener { dialog, which ->
             champions.team =  which.toLong()
-            val strName = arrayAdapter.getItem(which)
-            val builderInner = AlertDialog.Builder(activity)
-            builderInner.setMessage(strName)
-            builderInner.setTitle(getString(R.string.add_your_selected))
-            builderInner.setPositiveButton(getString(android.R.string.ok), DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
-            builderInner.show()
+            dialog.dismiss()
+            //val strName = arrayAdapter.getItem(which)
+            //add_show_club.text = strName
         })
         builderSingle.show()
     }
