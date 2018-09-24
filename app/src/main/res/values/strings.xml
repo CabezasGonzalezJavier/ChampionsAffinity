@@ -101,4 +101,46 @@
 
     <string name="add_show_club">Show club</string>
     <string name="add_to_add">add player</string>
+    <string name="add_team">Select One Team:</string>
+    <string name="add_nationality">Select One Nationality:</string>
+
+    <string name="add_russia">RUSSIA</string>
+    <string name="add_saudi">SAUDI_ARABIA</string>
+    <string name="add_egypt">EGYPT</string>
+    <string name="add_uruguay">URUGUAY</string>
+
+    <string name="add_portugal">PORTUGAL</string>
+    <string name="add_spain">SPAIN</string>
+    <string name="add_morocco">MOROCCO</string>
+    <string name="add_iran">IRAN</string>
+
+    <string name="add_france">FRANCE</string>
+    <string name="add_australia">AUSTRALIA</string>
+    <string name="add_peru">PERU</string>
+    <string name="add_denmark">DENMARK</string>
+
+    <string name="add_argentina">ARGENTINA</string>
+    <string name="add_iceland">ICELAND</string>
+    <string name="add_croatia">CROATIA</string>
+    <string name="add_nigeria">NIGERIA</string>
+
+    <string name="add_brazil">BRAZIL</string>
+    <string name="add_switzerland">SWITZERLAND</string>
+    <string name="add_costa_rica">COSTA_RICA</string>
+    <string name="add_serbia">SERBIA</string>
+
+    <string name="add_germany">GERMANY</string>
+    <string name="add_mexico">MEXICO</string>
+    <string name="add_sweden">SWEDEN</string>
+    <string name="add_south_korea">SOUTH_KOREA</string>
+
+    <string name="add_belgium">BELGIUM</string>
+    <string name="add_panama">PANAMA</string>
+    <string name="add_tunisia">TUNISIA</string>
+    <string name="add_england">ENGLAND</string>
+
+    <string name="add_poland">POLAND</string>
+    <string name="add_senegal">SENEGAL</string>
+    <string name="add_colombia">COLOMBIA</string>
+    <string name="add_japan">JAPAN</string>
 </resources>

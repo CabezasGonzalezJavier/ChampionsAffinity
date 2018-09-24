@@ -120,10 +120,17 @@ class AddDialogFragment: DialogFragment() {
         //addDialogPresenter.savePlayer(champions)
         idPlayer.setValue(champions)
     }
+    fun showNationality() {
+        val builderNationality = AlertDialog.Builder(activity)
+        builderNationality.setTitle(getString(R.string.add_nationality))
+        val arrayAdapter = ArrayAdapter<String>(activity, android.R.layout.select_dialog_singlechoice)
+        arrayAdapter.add(getString(R.string.club_at_madrid))
+
+    }
 
     fun showClubs() {
         val builderSingle = AlertDialog.Builder(activity)
-        builderSingle.setTitle("Select One Name:-")
+        builderSingle.setTitle(getString(R.string.add_team))
 
         val arrayAdapter = ArrayAdapter<String>(activity, android.R.layout.select_dialog_singlechoice)
         arrayAdapter.add(getString(R.string.club_at_madrid))
