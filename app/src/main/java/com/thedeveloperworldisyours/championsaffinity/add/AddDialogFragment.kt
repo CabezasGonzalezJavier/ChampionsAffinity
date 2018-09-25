@@ -51,6 +51,9 @@ class AddDialogFragment: DialogFragment() {
             addPlayer()
             dismiss()
         }
+        add_show_number.setOnClickListener{
+            addNumber()
+        }
         add_show_nationality.setOnClickListener {
             showNationality()
         }
@@ -58,6 +61,8 @@ class AddDialogFragment: DialogFragment() {
             showClubs()
         }
     }
+
+
 
     fun addPlayer() {
 
@@ -109,7 +114,6 @@ class AddDialogFragment: DialogFragment() {
         champions.imageURL = "https://firebasestorage.googleapis.com/v0/b/voterussia2018.appspot.com/o/1-1b.jpeg?alt=media&token=36a034f5-1c69-460f-857a-bf2b6f4d0589"
         champions.name =add_title_name_editText.text.toString()
         champions.nationality = 1
-        champions.number = "10"
         champions.position =  3
         champions.vote = "3.5"
         val builderString = StringBuilder()
@@ -123,7 +127,52 @@ class AddDialogFragment: DialogFragment() {
         //addDialogPresenter.savePlayer(champions)
         idPlayer.setValue(champions)
     }
+    fun addNumber() {
 
+        val builderNumber = AlertDialog.Builder(activity)
+        builderNumber.setTitle(getString(R.string.add_number))
+        val arrayAdapter = ArrayAdapter<String>(activity, android.R.layout.select_dialog_singlechoice)
+        arrayAdapter.add(getString(R.string.number_1))
+        arrayAdapter.add(getString(R.string.number_2))
+        arrayAdapter.add(getString(R.string.number_3))
+        arrayAdapter.add(getString(R.string.number_4))
+        arrayAdapter.add(getString(R.string.number_5))
+        arrayAdapter.add(getString(R.string.number_6))
+        arrayAdapter.add(getString(R.string.number_7))
+        arrayAdapter.add(getString(R.string.number_8))
+        arrayAdapter.add(getString(R.string.number_9))
+
+        arrayAdapter.add(getString(R.string.number_10))
+        arrayAdapter.add(getString(R.string.number_11))
+        arrayAdapter.add(getString(R.string.number_12))
+        arrayAdapter.add(getString(R.string.number_13))
+        arrayAdapter.add(getString(R.string.number_14))
+        arrayAdapter.add(getString(R.string.number_15))
+        arrayAdapter.add(getString(R.string.number_16))
+        arrayAdapter.add(getString(R.string.number_17))
+        arrayAdapter.add(getString(R.string.number_18))
+        arrayAdapter.add(getString(R.string.number_19))
+
+        arrayAdapter.add(getString(R.string.number_21))
+        arrayAdapter.add(getString(R.string.number_22))
+        arrayAdapter.add(getString(R.string.number_23))
+        arrayAdapter.add(getString(R.string.number_24))
+        arrayAdapter.add(getString(R.string.number_25))
+        arrayAdapter.add(getString(R.string.number_26))
+        arrayAdapter.add(getString(R.string.number_27))
+        arrayAdapter.add(getString(R.string.number_28))
+        arrayAdapter.add(getString(R.string.number_29))
+        arrayAdapter.add(getString(R.string.number_30))
+        builderNumber.setNegativeButton(android.R.string.cancel, DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
+
+        builderNumber.setAdapter(arrayAdapter, DialogInterface.OnClickListener() { dialog, which ->
+            val another = which + 1
+            champions.number =  another.toString()
+            dialog.dismiss()
+            //add_show_nationality.text = arrayAdapter.getItem(which)
+        })
+        builderNumber.show()
+    }
     fun showNationality() {
         val builderNationality = AlertDialog.Builder(activity)
         builderNationality.setTitle(getString(R.string.add_nationality))

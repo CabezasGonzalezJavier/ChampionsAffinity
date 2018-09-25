@@ -99,6 +99,8 @@
     <string name="add_title_full_name">Full name</string>
     <string name="add_title_club">Club</string>
 
+    <string name="add_number_button">Number</string>
+    <string name="add_number">Select One Number:</string>
     <string name="add_show_club">Show club</string>
     <string name="add_to_add">add player</string>
     <string name="add_team">Select One Team:</string>
@@ -145,4 +147,38 @@
     <string name="nationality_senegal">SENEGAL</string>
     <string name="nationality_colombia">COLOMBIA</string>
     <string name="nationality_japan">JAPAN</string>
+
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="number_6">6</string>
+    <string name="number_7">7</string>
+    <string name="number_8">8</string>
+    <string name="number_9">9</string>
+    <string name="number_10">10</string>
+
+    <string name="number_11">11</string>
+    <string name="number_12">12</string>
+    <string name="number_13">13</string>
+    <string name="number_14">14</string>
+    <string name="number_15">15</string>
+    <string name="number_16">16</string>
+    <string name="number_17">17</string>
+    <string name="number_18">18</string>
+    <string name="number_19">19</string>
+    <string name="number_20">20</string>
+
+    <string name="number_21">21</string>
+    <string name="number_22">22</string>
+    <string name="number_23">23</string>
+    <string name="number_24">24</string>
+    <string name="number_25">25</string>
+    <string name="number_26">26</string>
+    <string name="number_27">27</string>
+    <string name="number_28">28</string>
+    <string name="number_29">29</string>
+    <string name="number_30">30</string>
+
 </resources>
