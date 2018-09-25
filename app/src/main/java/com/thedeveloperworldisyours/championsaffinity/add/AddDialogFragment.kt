@@ -174,9 +174,9 @@ class AddDialogFragment: DialogFragment() {
         arrayAdapter.add(getString(R.string.number_28))
         arrayAdapter.add(getString(R.string.number_29))
         arrayAdapter.add(getString(R.string.number_30))
-        builderNumber.setNegativeButton(android.R.string.cancel, DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
+        builderNumber.setNegativeButton(android.R.string.cancel, { dialog, which -> dialog.dismiss() })
 
-        builderNumber.setAdapter(arrayAdapter, DialogInterface.OnClickListener() { dialog, which ->
+        builderNumber.setAdapter(arrayAdapter, { dialog, which ->
             val another = which + 1
             champions.number =  another.toString()
             dialog.dismiss()
@@ -228,9 +228,9 @@ class AddDialogFragment: DialogFragment() {
         arrayAdapter.add(getString(R.string.nationality_colombia))
         arrayAdapter.add(getString(R.string.nationality_japan))
 
-        builderNationality.setNegativeButton(android.R.string.cancel, DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
+        builderNationality.setNegativeButton(android.R.string.cancel, { dialog, which -> dialog.dismiss() })
 
-        builderNationality.setAdapter(arrayAdapter, DialogInterface.OnClickListener() { dialog, which ->
+        builderNationality.setAdapter(arrayAdapter, { dialog, which ->
             champions.nationality =  which.toLong()
             dialog.dismiss()
             //add_show_nationality.text = arrayAdapter.getItem(which)
@@ -271,9 +271,9 @@ class AddDialogFragment: DialogFragment() {
         arrayAdapter.add(getString(R.string.club_tottenham))
         arrayAdapter.add(getString(R.string.club_valencia))
 
-        builderSingle.setNegativeButton(getString(android.R.string.cancel), DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
+        builderSingle.setNegativeButton(getString(android.R.string.cancel), { dialog, which -> dialog.dismiss() })
 
-        builderSingle.setAdapter(arrayAdapter, DialogInterface.OnClickListener { dialog, which ->
+        builderSingle.setAdapter(arrayAdapter, { dialog, which ->
             champions.team =  which.toLong()
             dialog.dismiss()
             //val strName = arrayAdapter.getItem(which)
