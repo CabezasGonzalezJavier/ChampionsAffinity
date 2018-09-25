@@ -51,6 +51,9 @@ class AddDialogFragment: DialogFragment() {
             addPlayer()
             dismiss()
         }
+        add_show_date.setOnClickListener {
+            addDate()
+        }
         add_show_number.setOnClickListener{
             addNumber()
         }
@@ -61,7 +64,6 @@ class AddDialogFragment: DialogFragment() {
             showClubs()
         }
     }
-
 
 
     fun addPlayer() {
@@ -126,6 +128,15 @@ class AddDialogFragment: DialogFragment() {
 
         //addDialogPresenter.savePlayer(champions)
         idPlayer.setValue(champions)
+    }
+
+    fun addDate() {
+        val builderDate = AlertDialog.Builder(activity)
+        builderDate.setTitle(getString(R.string.add_number_date))
+        builderDate.setView(R.layout.add_dialog_date)
+        builderDate.setNegativeButton(android.R.string.cancel,  { dialog, which -> dialog.dismiss() })
+        builderDate.setPositiveButton(android.R.string.ok, {dialogInterface, which->  })
+        builderDate.show()
     }
     fun addNumber() {
 
